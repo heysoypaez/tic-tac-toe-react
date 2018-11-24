@@ -10,15 +10,7 @@ Importar paquetes a traves de packagecontrol.io
 
 Puedo introducir variables dentro del HTML con {}
 
-var compraCarros = 2
-
-<div> Ayer compre {compraAyer} carros </div>
-
-Nota: eso tiene potencial
-
-Aùn no entiendo la funcion flecha pero asumire que entederé como funciona
-
-
+Aùn no entiendo la funcion flecha pero asumire que entederé como funcion
 
 ==========
 
