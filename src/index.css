@@ -1,7 +1,25 @@
+button.square{
+	
+	width: 100px;
+	height: 100px;
+
+}
+
+
+#info-game{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/*=======*/
+
+
 body {
 	
-	font: 14px "Century Gothic", Futura, sans-serif;
+	background-color: #ff9900;
+	font-family: 'Raleway', sans-serif;
 	margin: 20px;
+	color: #ffffff;
 	
 }
 
@@ -21,7 +39,7 @@ ol, ul {
 
 }
 .square {
-	background-color: #fff;
+	background-color: #FF0080;
 	border: 1px solid #999;
 	float: left;
 	font-size: 24px;
@@ -44,10 +62,13 @@ ol, ul {
 }
 
 .game {
+	
+	float: right;
 	display: flex;
 	flex-direction: row;
 }
 
 .game-info {
-	margin-left: 20px;
+	
+	float: left;
 }
