@@ -10,8 +10,9 @@ Importar paquetes a traves de packagecontrol.io
 
 Puedo introducir variables dentro del HTML con {}
 
-Aùn no entiendo la funcion flecha pero asumire que entederé como funcion
+var compraCarros = 2
 
+<div> Ayer compre {compraAyer} carros </div>
 ==========
 
 Componentes
@@ -148,24 +149,23 @@ class Game extends React.Component {
 		const winner = calculateWinner(current.squares)
 	
 
-			const moves = history.map((step, move) => {
-				const desc = move ?
-				"Go to move #" + move : "Go to game start";
+			const movimientos = history.map((step, movimiento) => {
+				const desc = movimiento ?
+				`Ve al movimiento # ${movimiento}` : "Ve al inicio del juego";
 				return (
-					<li key={move/* we use this key because every move in this game is unique*/}>
-						<button onClick={() => this.jumpTo(move)}>{desc}</button>
+					<li key={movimiento/* we use this key because every movimiento in this game is unique*/}>
+						<button onClick={() => this.jumpTo(movimiento)}>{desc}</button>
 					</li>
 					);
-				/*For each move in the tic-tac-toes’s game’s history, 
+				/*For each movimiento in the tic-tac-toes’s game’s history, 
 				we create a list item <li> which contains a button <button>. 
 				The button has a onClick handler which calls a method called
 				 this.jumpTo(). We haven’t implemented the jumpTo() method yet. 
-				 For now, we should see a list of the moves that have occurred in 
+				 For now, we should see a list of the movimientos that have occurred in 
 				 he game and a warning in the developer tools console that says:*/
 			})
 
 
-		//que era let???
 		let status;
 			if (winner)
 			{
@@ -186,8 +186,8 @@ class Game extends React.Component {
 					/>
 				</div>
 				<div className="game-info">
-					<div> {status}  </div>
-					<ol>{moves} </ol>
+					<div id="info-game"> {status}  </div>
+					<ol>{movimientos} </ol>
 				</div>
 			</div>
 			);
